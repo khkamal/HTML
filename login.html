@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" herf="" type="image/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: rgb(60, 73, 245);
+            color: #fff;
+            height: 50px;
+        }
+        ul a {
+            color: #080808;
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            padding: 3px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding:0 10px;
+            flex-wrap: wrap;
+            
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            margin-top: 16px;
+            
+        }
+        img {
+            background-color: #fff;
+            border-radius: 200%;
+            margin-top: 2px;
+        }
+        
+        .flex-container h1 {
+            font-size: 30px;
+            margin-top: 5px;
+        }
+        ul a:hover {
+            background-color: #050000;
+            color:rgb(252, 249, 249);
+
+        }
+        h1 a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .login-container {
+            background-color: rgb(240, 238, 236);
+            width: 40%;
+            height:350px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10%;
+            margin-left: 30%;
+            flex-wrap: wrap;
+        }
+
+        .login-container h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+        .item input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 5px;
+            background-color: rebeccapurple;
+            color: #fff;
+            font-weight: bold;
+            font: 1em sans-serif;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover {
+            background-color: #080808;
+        }
+        .item label {
+            padding:40px 0px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+            <img src="image/wel.png" height="47" width="80" alt="logo" type="image/png">
+            <h1><a href="home.html">Welcome 2.0</a></h1>
+            <div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="login-container">
+        <h1>Login to your account</h1>
+        <div class="item">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="username">
+        </div>
+        <div class="item">
+            <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password" required>
+    
+        </div>
+        <button>Login</button>
+        </div>
+    
+</body>
+</html>
